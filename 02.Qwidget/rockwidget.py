@@ -1,0 +1,22 @@
+from PySide6.QtWidgets import QWidget, QPushButton, QHBoxLayout, QVBoxLayout
+
+class RocWidget(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Rockwidget")
+        button1: QPushButton = QPushButton("Button1")
+        button1.clicked.connect(self.button1_clicked)
+        button2: QPushButton = QPushButton("Button2")
+        button2.clicked.connect(self.button2_clicked)
+
+        button_layout: QVBoxLayout = QVBoxLayout()
+        button_layout.addWidget(button1)
+        button_layout.addWidget(button2)
+
+        self.setLayout(button_layout)
+
+    def button1_clicked(self):
+        print("按钮1被按下")
+
+    def button2_clicked(self):
+        print("按钮2被按下")
