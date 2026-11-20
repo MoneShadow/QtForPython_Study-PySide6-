@@ -1,0 +1,27 @@
+# Python 字节码与缓存
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 虚拟环境
+.venv/
+venv/
+env/
+
+# PySide6 / Qt 构建与缓存产物
+build/
+dist/
+*.spec
+*.qmlc
+*.jsc
+
+# IDE / 编辑器
+.idea/
+*.swp
+*.swo
+*~
+
+# 操作系统
+.DS_Store
+Thumbs.db
+desktop.ini
